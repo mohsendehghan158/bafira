@@ -560,16 +560,7 @@ p { margin: 0; }
 
 /* ---------- Coverage / agencies ---------- */
 .coverage { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 5vw, 56px); align-items: center; }
-.provinces { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); }
-.province {
-  background: var(--surface); border: 1px solid var(--line);
-  border-radius: var(--r-sm); padding: 14px 16px;
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
-  font-size: .88rem; font-weight: 600;
-  transition: border-color .25s var(--ease), transform .25s var(--ease);
-}
-.province:hover { border-color: var(--brand); transform: translateY(-3px); }
-.province span { color: var(--ink-3); font-size: .78rem; font-weight: 700; }
+.perks { display: grid; gap: 14px; }
 
 .map-wrap {
   position: relative; background: var(--surface);
@@ -793,8 +784,6 @@ p { margin: 0; }
   .pcard__art .swatch { --u: .4; }
   .pcard__meta { gap: 5px; }
   .tagline { font-size: .68rem; padding: 3px 8px; }
-  .provinces { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .province { flex-direction: column; align-items: flex-start; gap: 4px; }
 }
 
 @media (max-width: 560px) {
