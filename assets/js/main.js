@@ -150,15 +150,15 @@
 
     if (!name || !phone) {
       status.textContent = 'لطفاً نام و شماره تماس را کامل کنید.';
-      status.style.background = 'var(--brand-100)';
-      status.style.color = 'var(--brand-600)';
+      status.style.background = 'var(--cream-2)';
+      status.style.color = 'var(--ink)';
       status.classList.add('is-visible');
       return;
     }
 
     status.textContent = name + ' عزیز، درخواست شما ثبت شد. کارشناسان بافیرا به‌زودی تماس می‌گیرند.';
-    status.style.background = 'var(--forest-100)';
-    status.style.color = 'var(--forest)';
+    status.style.background = 'var(--yellow)';
+    status.style.color = 'var(--ink)';
     status.classList.add('is-visible');
     form.reset();
   });
